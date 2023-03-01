@@ -7,6 +7,10 @@
   color: hsl(213, 9%, 39%);
 }
 
+li {
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -69,7 +73,6 @@ h4,
   position: absolute;
   top: 2rem;
   right: 0;
-  list-style: none;
   visibility: hidden;
 }
 
@@ -186,14 +189,34 @@ img {
 }
 
 footer {
-  color: hsl(168, 34%, 41%);
+  padding-top: 3rem;
+  text-align: center;
+  background-color: hsl(182, 38%, 61%);
+}
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+.sm__icons {
+  padding: 1rem 0;
+}
+.sm__icons i {
+  padding: 0.5rem;
 }
 .attribution {
-  font-size: 11px;
+  font-size: 0.5rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+footer svg,
+footer i,
+.footer__menu__item {
+  color: #458c7e;
 }
 @media screen and (min-width: 676px) {
   .header {
